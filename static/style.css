@@ -1,0 +1,97 @@
+:root {
+    --main-color: #4CAF50;
+    --button-hover-color: #45a049;
+    --background-color: #f0f8ff;
+    --text-color: #333;
+    --result-color: #006400;
+    --container-bg-color: #fff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--main-color);
+    padding: 10px 20px;
+    border-radius: 0.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--button-hover-color);
+}
+
+.container {
+    background-color: var(--container-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--shadow-color);
+    text-align: center;
+}
+
+h1 {
+    color: var(--text-color);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select {
+    padding: 10px;
+    margin: 10px 0;
+    width: 95%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--button-hover-color);
+}
+
+.result {
+    margin-top: 20px;
+}
+
+.result h2 {
+    color: var(--result-color);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    input, select {
+        width: 100%;
+    }
+}

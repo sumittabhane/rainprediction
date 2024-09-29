@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainly</title>
+    <!-- Box Icons -->
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <!-- Link To CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='landing.css') }}">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <a href="#" class="logo">Rainly</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <!-- Dark Mode -->
+            <div class="bx bx-moon" id="darkmode"></div>
+        </ul>
+    </header>
+    <!-- Home  Section-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Rain Predictor</h1>
+            <h2>Know will it  <br> Rain or Not</h2>
+            <a href="predict" class="btn">Get Started</a>
+        </div>
+        <div class="home-img">
+            <img src="https://plus.unsplash.com/premium_photo-1670002347718-de1091111728?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="https://plus.unsplash.com/premium_photo-1661715276689-619fb1c79d6f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+        <div class="about-text">
+            <span>About Us</span>
+            <h2>We make <br> Rain Prediction</h2>
+            <p>Welcome to Rain Predictor, your reliable source for predicting weather patterns in the Nagpur region. Utilizing advanced machine learning models and real-time weather data, our platform provides accurate rain forecasts to help you plan ahead. Whether you're preparing for outdoor activities or safeguarding your crops, Rain Predictor ensures you're always a step ahead of the weather.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Service -->
+    <section class="services" id="services">
+        <div class="heading">
+            <span>Services</span>
+            <h2>We provide best Rain Prediction service</h2>
+        </div>
+
+        <div class="servives-container">
+            <!-- Box 1 -->
+            <div class="s-box">
+                <img src="https://plus.unsplash.com/premium_photo-1705310031361-01787e099f9d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2FsYW5kZXJ8ZW58MHx8MHx8fDA%3D" alt="">
+                <h3>Date Selection</h3>
+                <p>Select your desired date to get precise rain predictions based on historical and real-time weather data.</p>
+            </div>
+            <!-- Box 2 -->
+            <div class="s-box">
+                <img src="https://plus.unsplash.com/premium_photo-1685283298967-88bdc86e9c40?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmVnaW9ufGVufDB8fDB8fHww" alt="">
+                <h3>Region Selection</h3>
+                <p>Choose your region to receive tailored rain predictions specific to your location.</p>
+            </div>
+            <!-- Box 3 -->
+            <div class="s-box">
+                <img src="https://images.unsplash.com/photo-1499578124509-1611b77778c8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fGRheSUyRm5pZ2h0fGVufDB8fDB8fHww" alt="">
+                <h3>Day/Night</h3>
+                <p>Select Day or Night to get weather predictions customized for the specific time of day.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connect -->
+    <section class="connect">
+        <div class="connect-text">
+            <span>Let's Talk</span>
+            <h2>Connect now</h2>
+        </div>
+        <a href="#" class="btn">Contact Us</a>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="contact-box">
+            <h3>Rainly</h3>
+            <span>Connect With Us</span>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook' ></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+            </div>
+        </div>
+        <div class="contact-box">
+            <h3>Menu Links</h3>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </div>
+        <div class="contact-box">
+            <h3>Quick Links</h3>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#Privacy Policy">Privacy Policy</a></li>
+            <li><a href="#Disclaimer">Disclaimer</a></li>
+            <li><a href="#Terms Of Use">Terms Of Use</a></li>
+        </div>
+        <div class="contact-box address">
+            <h3>Contact</h3>
+            <i class='bx bxs-map' ><span>S.B.Jain Institute of Technology Management and Research</span></i>
+            <i class='bx bxs-phone' ><span>+91 000 000 0000</span></i>
+            <i class='bx bxs-envelope' ><span>Example@email.com</span></i>
+        </div>
+    </section>
+
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Link To JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

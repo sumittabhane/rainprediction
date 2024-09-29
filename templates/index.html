@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Rain Predictor</title>
+</head>
+<body>
+    <div class="top-left">
+        <a href="/" class="btn">Home</a>
+    </div>
+    <div class="container">
+        <h1>Rain Predictor</h1>
+        <form method="POST">
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="region">Select Region:</label>
+            <select id="region" name="region" required>
+                <option value="" disabled selected>Select Region</option>
+                <option value="Nagpur">Nagpur</option>
+                <option value="Sonegaon">Sonegaon</option>
+            </select>
+
+            <label for="daynight">Select Time:</label>
+            <select id="daynight" name="daynight" required>
+                <option value="" disabled selected>Select Time</option>
+                <option value="Day">Day</option>
+                <option value="Night">Night</option>
+            </select>
+
+            <button type="submit">Check Weather</button>
+        </form>
+
+        {% if result is not none %}
+            <div class="result">
+                <h2>The weather will be: {{ result }}</h2>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>

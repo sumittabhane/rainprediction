@@ -1,0 +1,6 @@
+Flask==2.3.2
+flask
+numpy==1.25.2
+requests==2.31.0  # Include if you need to make HTTP requests
+gunicorn==21.0.1  # Optional, for production deployment
+scikit-learn
